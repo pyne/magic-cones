@@ -7,15 +7,20 @@ import json
 import argparse
 
 import github
+import report
 
 def main():
     parser = argparse.ArgumentParser('magic-cones')
-    parser.add_argument('-r', '--repo', help='owner/repo string', 
+    parser.add_argument('--repo', help='owner/repo string', 
                         dest='repo')
     parser.add_argument('-t', '--transactions', help='/path/to/transactions file', 
                         default='trans.json', dest='transactions_fname')
     parser.add_argument('--update', action='store_true', default=False, dest='update',
                         help='updates transactions from github')
+    parser.add_argument('-r', action='store_true', default=False, dest='report',
+                        help='prints report')
+    parser.add_argument('--heml', action='store_true', default=False, dest='html',
+                        help='uses html')
     parser.add_argument('--gh-user', default=None, dest='gh_user',
                         help='github username')
     parser.add_argument('--gh-cred', default='gh.cred', dest='gh_cred',
@@ -33,6 +38,8 @@ def main():
 
     if ns.update:
         github.update(trans, user=ns.gh_user, credfile=ns.gh_cred)
+    if ns.report:
+        print(report.report(trans, html=ns.html))
 
     with io.open(ns.transactions_fname, 'wb') as f:
         json.dump(trans, f, indent=1, separators=(',', ': '))

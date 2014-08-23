@@ -2,6 +2,20 @@ from __future__ import print_function
 import io
 import os
 
+SAPLINGS_PER_CONE = 8
+TREES_PER_CONE = 64
+
+def inventories(trans):
+    inventories = {}
+    hist = trans['history']
+    for tran in hist:
+        inv = inventories.get(tran['player'], {'cones': 0, 'magic': {}})
+        inventories[tran['player']] = inv
+        inv['cones'] += tran.get('cones', 0)
+        for key in tran.get('magic', ()):
+            inv['magic'][key] = tran['magic'][key] + inv['magic'].get(key, 0)
+    return inventories
+
 def newoverwrite(s, filename, verbose=False):
     """Useful for not forcing re-compiles and thus playing nicely with the
     build system.  This is acomplished by not writing the file if the existsing
