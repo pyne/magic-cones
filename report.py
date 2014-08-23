@@ -1,5 +1,6 @@
 from __future__ import print_function
 from collections import namedtuple
+from textwrap import TextWrapper
 
 from prettytable import PrettyTable
 
@@ -13,13 +14,18 @@ def report(trans, html=False):
         rankings.append((player, inv['cones'], inv['magic']))
     rankings.sort(key=lambda x: x[1], reverse=True)
     listings = []
+    tw = TextWrapper(width=30)
+    mctemp = '{1}x {0} cone{2}'
     for player, cones, magic in rankings:
+        s = ', '.join([mctemp.format(key, value, '' if value == 1 else 's') \
+                       for key, value in sorted(magic.items()) if value > 0])
+        s = '\n'.join(tw.wrap(s))
         listings.append((player, 
-                         cones // TREES_PER_CONE, 
-                         cones // SAPLINGS_PER_CONE, 
-                         cones % SAPLINGS_PER_CONE, 
-                         ', '.join(['{1}x {0} cones'.format(key, value) for key, value \
-                                    in sorted(magic.items()) if value > 0])
+                         cones // TREES_PER_CONE or '', 
+                         cones // SAPLINGS_PER_CONE or \
+                            ('' if cones // TREES_PER_CONE == 0 else 0), 
+                         cones % SAPLINGS_PER_CONE,
+                         s,
                          ))
     tab = PrettyTable(['Player', 'Trees', 'Saplings', 'Cones', 'Magic Cones'])
     for listing in listings:
