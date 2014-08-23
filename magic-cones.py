@@ -6,6 +6,7 @@ import sys
 import json
 import argparse
 
+import gaia
 import raven
 import github
 import report
@@ -20,6 +21,8 @@ def main():
                         default='trans.json', dest='transactions_fname')
     parser.add_argument('--update', action='store_true', default=False, dest='update',
                         help='updates transactions from github')
+    parser.add_argument('--drop', action='store_true', default=False, dest='drop',
+                        help='Gaia drops magic cones')
     parser.add_argument('-r', action='store_true', default=False, dest='report',
                         help='prints report')
     parser.add_argument('--html', action='store_true', default=False, dest='html',
@@ -49,6 +52,8 @@ def main():
 
     if ns.update:
         github.update(trans, user=ns.gh_user, credfile=ns.gh_cred)
+    if ns.drop:
+        gaia.drop(trans)
     if len(ns.cast) > 0:
         grimoire.cast(trans, ns.cast[0], ns.cast[1], target=ns.target)
     if ns.report:
