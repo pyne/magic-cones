@@ -8,12 +8,19 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 from report import report
+from lawyer import rules
 
 TEXT = """
 Current Cone Cache
 ------------------
+Ley line of credit for each player:
 
 {report}
+
+Rules
+-----
+
+{rules}
 """
 
 HTML = """
@@ -21,7 +28,11 @@ HTML = """
   <head></head>
   <body>
     <h2>Current Cone Cache</h2>
+      Ley line of credit for each player:
 {report}
+    <hr/>
+    <h2>Rules</h2>
+{rules}
   </body>
 </html>
 """
@@ -40,8 +51,8 @@ def send(trans):
     msg['To'] = you
 
     # create content
-    text = TEXT.format(report=report(trans))
-    html = HTML.format(report=report(trans, html=True))
+    text = TEXT.format(report=report(trans), rules=rules())
+    html = HTML.format(report=report(trans, html=True), rules=rules(html=True))
     part1 = MIMEText(text, 'plain')
     part2 = MIMEText(html, 'html')
     msg.attach(part1)

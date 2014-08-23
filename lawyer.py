@@ -19,10 +19,10 @@ magic cone effects
 
 HTML = """{intro}
 
-<h3>basics</h3>
+<h3>Basics</h3>
 {basics}
 
-<h3>magic cone effects</h3>
+<h3>Magic Cone Effects</h3>
 {mceffects}
 <br/><br/>
 {mctable}
