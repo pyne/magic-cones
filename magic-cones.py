@@ -35,7 +35,7 @@ def main():
         github.update(trans, user=ns.gh_user, credfile=ns.gh_cred)
 
     with io.open(ns.transactions_fname, 'wb') as f:
-        json.dump(trans, f)
+        json.dump(trans, f, indent=1, separators=(',', ': '))
 
 
 if __name__ == '__main__':

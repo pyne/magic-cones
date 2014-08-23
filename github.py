@@ -75,23 +75,23 @@ def update(trans, user=None, credfile='gh.cred'):
         print("Tallying PR {0}".format(num))
         previous_prs.add(num)
         is_self_merge = (pr.user == pr.merged_by)
-        unames = {pr.user.name}
+        unames = {pr.user.login}
         for comment in pr.iter_comments():
-            unames.add(comment.user.name)
+            unames.add(comment.user.login)
         if is_self_merge:
             # no cones awarded for self-merges
-            unames.discard(pr.user.name)
+            unames.discard(pr.user.login)
         for u in unames:
             tran = {'player': u, 'pr': num, 'cones': 1}
-            tran['kind'] = 'requester' if u == pr.user.name else 'reviewer'
+            tran['kind'] = 'requester' if u == pr.user.login else 'reviewer'
             hist.append(tran)
         # apply bounties
         m = BOUNTY_RE.search(pr.body_text)
         if m is not None and not is_self_merge:
             bounty = int(m.group(1))
-            hist.append({'player': pr.user.name, 'pr': num, 'cones': -bounty, 
-                         'target': pr.merged_by.name, 'kind': 'bounty_poster'})
-            hist.append({'player': pr.merged_by.name, 'pr': num, 'cones': bounty, 
-                         'target': pr.user.name, 'kind': 'bounty_winner'})
+            hist.append({'player': pr.user.login, 'pr': num, 'cones': -bounty, 
+                         'target': pr.merged_by.login, 'kind': 'bounty_poster'})
+            hist.append({'player': pr.merged_by.login, 'pr': num, 'cones': bounty, 
+                         'target': pr.user.login, 'kind': 'bounty_winner'})
         trans['pull_requests'] = sorted(previous_prs)
 
