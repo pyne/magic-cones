@@ -9,10 +9,16 @@ def inventories(trans):
     inventories = {}
     hist = trans['history']
     for tran in hist:
+        kind = tran.get('knid', None)
+        countered = tran.get('countered', False)
         inv = inventories.get(tran['player'], {'cones': 0, 'magic': {}})
         inventories[tran['player']] = inv
-        inv['cones'] += tran.get('cones', 0)
+        inv['cones'] += 0 if countered else tran.get('cones', 0)
+        if 'magic' not in inv:
+            inv['magic'] = {}
         for key in tran.get('magic', ()):
+            if countered and key != kind:
+                continue
             inv['magic'][key] = tran['magic'][key] + inv['magic'].get(key, 0)
     return inventories
 

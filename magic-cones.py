@@ -8,6 +8,7 @@ import argparse
 
 import github
 import report
+import grimoire
 
 def main():
     parser = argparse.ArgumentParser('magic-cones')
@@ -19,8 +20,12 @@ def main():
                         help='updates transactions from github')
     parser.add_argument('-r', action='store_true', default=False, dest='report',
                         help='prints report')
-    parser.add_argument('--heml', action='store_true', default=False, dest='html',
+    parser.add_argument('--html', action='store_true', default=False, dest='html',
                         help='uses html')
+    parser.add_argument('--cast', nargs=2, default=(), dest='cast',
+                        help='casts a spell, of the form player and magic cone')
+    parser.add_argument('--target', default=None, dest='target',
+                        help='target of a spell')
     parser.add_argument('--gh-user', default=None, dest='gh_user',
                         help='github username')
     parser.add_argument('--gh-cred', default='gh.cred', dest='gh_cred',
@@ -38,6 +43,8 @@ def main():
 
     if ns.update:
         github.update(trans, user=ns.gh_user, credfile=ns.gh_cred)
+    if len(ns.cast) > 0:
+        grimoire.cast(trans, ns.cast[0], ns.cast[1], target=ns.target)
     if ns.report:
         print(report.report(trans, html=ns.html))
 

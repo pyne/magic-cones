@@ -19,7 +19,7 @@ def report(trans, html=False):
                          cones // SAPLINGS_PER_CONE, 
                          cones % SAPLINGS_PER_CONE, 
                          ', '.join(['{1}x {0} cones'.format(key, value) for key, value \
-                                    in sorted(magic.items())])
+                                    in sorted(magic.items()), if value > 0])
                          ))
     tab = PrettyTable(['Player', 'Trees', 'Saplings', 'Cones', 'Magic Cones'])
     for listing in listings:
