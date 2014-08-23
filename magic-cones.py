@@ -6,6 +6,7 @@ import sys
 import json
 import argparse
 
+import raven
 import github
 import report
 import grimoire
@@ -30,6 +31,8 @@ def main():
                         help='github username')
     parser.add_argument('--gh-cred', default='gh.cred', dest='gh_cred',
                         help='github credentials file')
+    parser.add_argument('--email', action='store_true', default=False, dest='email',
+                        help='sends an email summary')
     ns = parser.parse_args()
 
     if os.path.isfile(ns.transactions_fname):
@@ -47,6 +50,8 @@ def main():
         grimoire.cast(trans, ns.cast[0], ns.cast[1], target=ns.target)
     if ns.report:
         print(report.report(trans, html=ns.html))
+    if ns.email:
+        raven.send(trans)
 
     with io.open(ns.transactions_fname, 'wb') as f:
         json.dump(trans, f, indent=1, separators=(',', ': '))

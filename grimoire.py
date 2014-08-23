@@ -58,4 +58,3 @@ def counter(trans, player, spell, target=None):
 
 SPELLBOOK['counter'] = counter
 
-

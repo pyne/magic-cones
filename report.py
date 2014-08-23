@@ -24,5 +24,5 @@ def report(trans, html=False):
     tab = PrettyTable(['Player', 'Trees', 'Saplings', 'Cones', 'Magic Cones'])
     for listing in listings:
         tab.add_row(listing)
-    rep = tab.get_html_string() if html else tab.get_string()
+    rep = tab.get_html_string(format=True) if html else tab.get_string()
     return rep
