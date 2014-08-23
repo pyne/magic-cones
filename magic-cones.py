@@ -9,6 +9,7 @@ import argparse
 import raven
 import github
 import report
+import lawyer
 import grimoire
 
 def main():
@@ -33,6 +34,8 @@ def main():
                         help='github credentials file')
     parser.add_argument('--email', action='store_true', default=False, dest='email',
                         help='sends an email summary')
+    parser.add_argument('--rules', action='store_true', default=False, dest='rules',
+                        help='displays the rules')
     ns = parser.parse_args()
 
     if os.path.isfile(ns.transactions_fname):
@@ -52,6 +55,8 @@ def main():
         print(report.report(trans, html=ns.html))
     if ns.email:
         raven.send(trans)
+    if ns.rules:
+        print(lawyer.rules(html=ns.html))
 
     with io.open(ns.transactions_fname, 'wb') as f:
         json.dump(trans, f, indent=1, separators=(',', ': '))

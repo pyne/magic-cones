@@ -1,8 +1,9 @@
 from __future__ import print_function
+from collections import OrderedDict
 
 from utils import SAPLINGS_PER_CONE, TREES_PER_CONE, inventories
 
-SPELLBOOK = {}
+SPELLBOOK = OrderedDict()
 
 def cast(trans, player, spell, target=None):
     """Casts a spell, possibly at a given target"""
@@ -30,25 +31,25 @@ def _common_cone(n, trans, player, spell, target=None):
         hist.append({'player': target, 'cones': n, 'kind': spell, 'target': player})
 
 def cone(trans, player, spell, target=None):
-    """cone - adds a single cone to a player (default) or target (optional)."""
+    """adds a single cone to a player (default) or target (optional)."""
     _common_cone(1, trans, player, spell, target=target)
 
 SPELLBOOK['cone'] = cone
 
 def sapling(trans, player, spell, target=None):
-    """sapling - adds a sapling to a player (default) or target (optional)."""
+    """adds a sapling to a player (default) or target (optional)."""
     _common_cone(SAPLINGS_PER_CONE, trans, player, spell, target=target)
 
 SPELLBOOK['sapling'] = sapling
 
 def tree(trans, player, spell, target=None):
-    """tree - adds a tree to a player (default) or target (optional)."""
+    """adds a tree to a player (default) or target (optional)."""
     _common_cone(TREES_PER_CONE, trans, player, spell, target=target)
 
 SPELLBOOK['tree'] = tree
 
 def counter(trans, player, spell, target=None):
-    """counter - cancels the effect of the previously played magic cone."""
+    """cancels the effect of the previously played magic cone."""
     hist = trans['history']
     hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},})
     i = -2
