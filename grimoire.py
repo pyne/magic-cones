@@ -9,7 +9,7 @@ def cast(trans, player, spell, target=None):
     invs = inventories(trans)
     if player not in invs:
         raise ValueError('{0} is not playing magic cones, too bad!'.format(player))
-    if target is not None and target not in invs and:
+    if (target is not None) and (target not in invs):
         raise ValueError('Target {0} is not playing magic cones!'.format(target))
     inv = invs[player]
     if inv['magic'].get(spell, 0) == 0:
