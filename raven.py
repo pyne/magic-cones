@@ -38,15 +38,14 @@ HTML = """
 """
 
 def send(trans):
-    """Sends an email to the list.
-    """
+    """Sends an email to the list."""
     me = "raven@pyne.io"
     you = "scopatz@gmail.com"
     today = datetime.date.today()
 
     # Create message container - the correct MIME type is multipart/alternative.
     msg = MIMEMultipart('alternative')
-    msg['Subject'] = 'Magic Cones Report - {0}'.format(today)
+    msg['Subject'] = 'Magic Cones Report {0}'.format(today)
     msg['From'] = me
     msg['To'] = you
 

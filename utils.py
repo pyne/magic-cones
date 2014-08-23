@@ -9,7 +9,7 @@ def inventories(trans):
     inventories = {}
     hist = trans['history']
     for tran in hist:
-        kind = tran.get('knid', None)
+        kind = tran.get('kind', None)
         countered = tran.get('countered', False)
         inv = inventories.get(tran['player'], {'cones': 0, 'magic': {}})
         inventories[tran['player']] = inv
