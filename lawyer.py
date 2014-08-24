@@ -11,8 +11,8 @@ basics
 ------
 {basics}
 
-magic cone effects
-------------------
+grimoire
+--------
 {mceffects}
 
 {mctable}"""
@@ -22,7 +22,7 @@ HTML = """{intro}
 <h3>Basics</h3>
 {basics}
 
-<h3>Magic Cone Effects</h3>
+<h3>Grimoire</h3>
 {mceffects}
 <br/><br/>
 {mctable}
@@ -112,7 +112,7 @@ Every magic cone is equally probable to obtain.
 <br/><br/>
 """
 
-MCEFFECTS = 'Magic cones have the following effects when cast.'
+MCEFFECTS = 'Magic cones have the following effects when cast:'
 
 def rules(html=False):
     """Returns a string containing the Magic Cones rules."""
