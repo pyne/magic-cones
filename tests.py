@@ -148,4 +148,12 @@ def test_cast_meed():
     yield assert_equal, exp_b, hist[-2]
     yield assert_equal, exp_a, hist[-1]
 
+def test_cast_koan():
+    spell = 'koan'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}}]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell)
+    exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1}}
+    yield assert_equal, exp, hist[-1]
+
 
