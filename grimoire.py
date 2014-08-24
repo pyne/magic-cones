@@ -3,7 +3,7 @@ from collections import OrderedDict
 
 import numpy as np
 
-from utils import SAPLINGS_PER_CONE, TREES_PER_CONE, inventories
+from utils import CONES_PER_SAPLING, CONES_PER_TREE, inventories, gross_cones
 
 SPELLBOOK = OrderedDict()
 
@@ -40,13 +40,13 @@ SPELLBOOK['cone'] = cone
 
 def sapling(trans, player, spell, target=None):
     """adds a sapling to a player (default) or target (optional)."""
-    _common_cone(SAPLINGS_PER_CONE, trans, player, spell, target=target)
+    _common_cone(CONES_PER_SAPLING, trans, player, spell, target=target)
 
 SPELLBOOK['sapling'] = sapling
 
 def tree(trans, player, spell, target=None):
     """adds a tree to a player (default) or target (optional)."""
-    _common_cone(TREES_PER_CONE, trans, player, spell, target=target)
+    _common_cone(CONES_PER_TREE, trans, player, spell, target=target)
 
 SPELLBOOK['tree'] = tree
 
@@ -117,15 +117,6 @@ def meed(trans, player, spell, target=None):
     _common_xfer(1.0, trans, player, spell, target=target)
 
 SPELLBOOK['meed'] = meed
-
-def koan(trans, player, spell, target=None):
-    """grants wisdom. A duck!"""
-    hist = trans['history']
-    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},})
-    k = KOANS[np.random.randint(0, len(KOANS))]
-    print(k.strip())
-
-SPELLBOOK['koan'] = koan
 
 KOANS = [
 'Ummon inquired of his monks, "This world is such a wide world! Why then do you answer to a temple bell and don ceremonial robes?',
@@ -214,3 +205,102 @@ Monk: "Where is the place from which all buddhas come?"
 Yun-men: "Next question, please!"
 """,
 ]
+
+def koan(trans, player, spell, target=None):
+    """grants wisdom. A duck!"""
+    hist = trans['history']
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},})
+    k = KOANS[np.random.randint(0, len(KOANS))]
+    print(k.strip())
+
+SPELLBOOK['koan'] = koan
+
+def spruce(trans, player, spell, target=None):
+    """receive a cone for every line of style guide fixes. Target is a 
+    comma-separated string of a pull request number and number of lines, 
+    for example '42,10'. Capped at 1/4 of the world's e-cone-omy.
+    """
+    hist = trans['history']
+    pr, n = tuple(map(int, target.split(',')))
+    n = min(n, int(gross_cones(trans)/4.0))
+    hist.append({'player': player, 'kind': spell, 'pr': pr, 'magic': {spell: -1},
+                 'cones': n})
+
+SPELLBOOK['spruce'] = spruce
+
+def slash(trans, player, spell, target=None):
+    """receive a cone for every net line of code removed. Target is a 
+    comma-separated string of a pull request number and number of lines 
+    removed, for example '42,10'. Capped at 1/4 of the world's e-cone-omy.
+    """
+    hist = trans['history']
+    pr, n = tuple(map(int, target.split(',')))
+    n = min(n, int(gross_cones(trans)/4.0))
+    hist.append({'player': player, 'kind': spell, 'pr': pr, 'magic': {spell: -1},
+                 'cones': n})
+
+SPELLBOOK['slash'] = slash
+
+def cypress(trans, player, spell, target=None):
+    """receive a cone for every line of documentation added. Target is a 
+    comma-separated string of a pull request number and number of lines,
+    for example '42,10'. Capped at 1/4 of the world's e-cone-omy.
+    """
+    hist = trans['history']
+    pr, n = tuple(map(int, target.split(',')))
+    n = min(n, int(gross_cones(trans)/4.0))
+    hist.append({'player': player, 'kind': spell, 'pr': pr, 'magic': {spell: -1},
+                 'cones': n})
+
+SPELLBOOK['cypress'] = cypress
+
+def sugar(trans, player, spell, target=None):
+    """congratulate, thank, or otherwise say something nice to another player
+    publicly and recieve a sapling. 
+    """
+    hist = trans['history']
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},
+                 'cones': CONES_PER_SAPLING})
+
+SPELLBOOK['sugar'] = sugar
+
+def pitch(trans, player, spell, target=None):
+    """publicly pitch the project to a potential user and recieve a sapling."""
+    hist = trans['history']
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},
+                 'cones': CONES_PER_SAPLING})
+
+SPELLBOOK['pitch'] = pitch
+
+def lodgepole(trans, player, spell, target=None):
+    """report an issue and recieve a sapling."""
+    hist = trans['history']
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},
+                 'cones': CONES_PER_SAPLING})
+
+SPELLBOOK['lodgepole'] = lodgepole
+
+def larch(trans, player, spell, target=None):
+    """triggers an extra drop ceremony."""
+    hist = trans['history']
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1}})
+    import gaia
+    gaia.drop(trans)
+
+SPELLBOOK['larch'] = larch
+
+def redwood(trans, player, spell, target=None):
+    """gives a sapling to every co-author of a conference proceeding.
+    The proceeding must be accepted. Target a is comma-separated list
+    of co-author player names.
+    """
+    hist = trans['history']
+    coauthors = target.split(',')
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1}})
+    for coauthor in coauthors:
+        hist.append({'player': player, 'kind': spell, 'cones': CONES_PER_SAPLING})
+
+SPELLBOOK['redwood'] = redwood
+
+
+

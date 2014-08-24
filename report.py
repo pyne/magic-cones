@@ -4,7 +4,7 @@ from textwrap import TextWrapper
 
 from prettytable import PrettyTable
 
-from utils import SAPLINGS_PER_CONE, TREES_PER_CONE, inventories
+from utils import CONES_PER_SAPLING, CONES_PER_TREE, inventories
 
 def report(trans, html=False):
     """Returns a summary report of all of the transactions."""
@@ -21,10 +21,10 @@ def report(trans, html=False):
                        for key, value in sorted(magic.items()) if value > 0])
         s = '\n'.join(tw.wrap(s))
         listings.append((player, 
-                         cones // TREES_PER_CONE or '', 
-                         cones // SAPLINGS_PER_CONE or \
-                            ('' if cones // TREES_PER_CONE == 0 else 0), 
-                         cones % SAPLINGS_PER_CONE,
+                         cones // CONES_PER_TREE or '', 
+                         cones // CONES_PER_SAPLING or \
+                            ('' if cones // CONES_PER_TREE == 0 else 0), 
+                         cones % CONES_PER_SAPLING,
                          s,
                          ))
     tab = PrettyTable(['Player', 'Trees', 'Saplings', 'Cones', 'Magic Cones'])

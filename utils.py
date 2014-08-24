@@ -2,8 +2,8 @@ from __future__ import print_function
 import io
 import os
 
-SAPLINGS_PER_CONE = 8
-TREES_PER_CONE = 64
+CONES_PER_SAPLING = 8
+CONES_PER_TREE = 64
 
 def inventories(trans):
     inventories = {}
@@ -21,6 +21,12 @@ def inventories(trans):
                 continue
             inv['magic'][key] = tran['magic'][key] + inv['magic'].get(key, 0)
     return inventories
+
+def gross_cones(trans):
+    """Computes the total number of cones in the world."""
+    invs = inventories(trans)
+    n = sum([inv['cones'] for _, inv in invs.items()])
+    return n
 
 def newoverwrite(s, filename, verbose=False):
     """Useful for not forcing re-compiles and thus playing nicely with the

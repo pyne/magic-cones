@@ -156,4 +156,70 @@ def test_cast_koan():
     exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1}}
     yield assert_equal, exp, hist[-1]
 
+def test_cast_spruce():
+    spell = 'spruce'
+    hist = [{'player': 'a', 'cones': 50, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell, target='42,10')
+    exp = {'player': 'a', 'kind': spell, 'pr': 42, 'magic': {spell: -1},
+           'cones': 10}
+    yield assert_equal, exp, hist[-1]
+    invs = utils.inventories(trans)
+    yield assert_equal, 60, invs['a']['cones']
 
+def test_cast_slash():
+    spell = 'slash'
+    hist = [{'player': 'a', 'cones': 50, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell, target='42,10')
+    exp = {'player': 'a', 'kind': spell, 'pr': 42, 'magic': {spell: -1},
+           'cones': 10}
+    yield assert_equal, exp, hist[-1]
+    invs = utils.inventories(trans)
+    yield assert_equal, 60, invs['a']['cones']
+
+def test_cast_cypress():
+    spell = 'cypress'
+    hist = [{'player': 'a', 'cones': 50, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell, target='42,10')
+    exp = {'player': 'a', 'kind': spell, 'pr': 42, 'magic': {spell: -1},
+           'cones': 10}
+    yield assert_equal, exp, hist[-1]
+    invs = utils.inventories(trans)
+    yield assert_equal, 60, invs['a']['cones']
+
+def test_cast_sugar():
+    spell = 'sugar'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell)
+    exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1},
+           'cones': 8}
+    yield assert_equal, exp, hist[-1]
+
+def test_cast_pitch():
+    spell = 'pitch'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell)
+    exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1},
+           'cones': 8}
+    yield assert_equal, exp, hist[-1]
+
+def test_cast_lodgepole():
+    spell = 'lodgepole'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell)
+    exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1},
+           'cones': 8}
+    yield assert_equal, exp, hist[-1]
+
+def test_cast_larch():
+    spell = 'larch'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell)
+    exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1}}
+    yield assert_equal, exp, hist[1]
