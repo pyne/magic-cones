@@ -28,7 +28,7 @@ HTML = """
   <head></head>
   <body>
     <h2>Current Cone Cache</h2>
-      Ley line of credit for each player:
+      Ley line of credit for each player:<br/><br/>
 {report}
     <hr/>
     <h2>Rules</h2>
