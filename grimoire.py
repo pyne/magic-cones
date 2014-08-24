@@ -256,7 +256,7 @@ SPELLBOOK['cypress'] = cypress
 
 def sugar(trans, player, spell, target=None):
     """congratulate, thank, or otherwise say something nice to another player
-    publicly and recieve a sapling. 
+    publicly and receive a sapling. 
     """
     hist = trans['history']
     hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},
@@ -265,7 +265,7 @@ def sugar(trans, player, spell, target=None):
 SPELLBOOK['sugar'] = sugar
 
 def pitch(trans, player, spell, target=None):
-    """publicly pitch the project to a potential user and recieve a sapling."""
+    """publicly pitch the project to a potential user and receive a sapling."""
     hist = trans['history']
     hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},
                  'cones': CONES_PER_SAPLING})
@@ -273,7 +273,7 @@ def pitch(trans, player, spell, target=None):
 SPELLBOOK['pitch'] = pitch
 
 def lodgepole(trans, player, spell, target=None):
-    """report an issue and recieve a sapling."""
+    """report an issue and receive a sapling."""
     hist = trans['history']
     hist.append({'player': player, 'kind': spell, 'magic': {spell: -1},
                  'cones': CONES_PER_SAPLING})

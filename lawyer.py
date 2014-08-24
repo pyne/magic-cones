@@ -49,7 +49,7 @@ to the original pull request message:
     **Bounty** - N
 
 Here N is replaced by the integer bounty value. Upon merge, the bounty value 
-is transfered from the requester to the *merger* in addition to the normal cone 
+is transferred from the requester to the *merger* in addition to the normal cone 
 awards. Other reviewers besides the merger do not receive the bounty.
 
 Weekly, the Great Earth Mother shakes down her trees and rewards players in 
@@ -91,14 +91,14 @@ to the original pull request message:
 <br/><br/>
 
 Here N is replaced by the integer bounty value. Upon merge, the bounty value 
-is transfered from the requester to the <i>merger</i> in addition to the normal cone 
+is transferred from the requester to the <i>merger</i> in addition to the normal cone 
 awards. Other reviewers besides the merger do not receive the bounty.
 <br/><br/>
 
 Weekly, the Great Earth Mother shakes down her trees and rewards players in 
 the sacred <i>drop</i> ceremony. During the drop, every player has the opportunity
 to receive special <i>magic cones</i> that are infused with powerful life energies.
-The magic cones may be <i>cast</i>, producing a boon to the <i>caster</i> or another 
+The magic cones may be <i>cast</i>, producing a boon to the <i>caster</i>  or another 
 <i>target</i> player. The exact effect depends on the kind of magic cone. The magic
 cone may be cast at any time and is destroyed in the process.
 <br/><br/>
