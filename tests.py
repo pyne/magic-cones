@@ -223,3 +223,33 @@ def test_cast_larch():
     grimoire.cast(trans, 'a', spell)
     exp = {'player': 'a', 'kind': spell, 'magic': {spell: -1}}
     yield assert_equal, exp, hist[1]
+
+def test_cast_redwood():
+    spell = 'redwood'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell, target='b,c')
+    exp_a = {'player': 'a', 'kind': spell, 'magic': {spell: -1}}
+    yield assert_equal, exp_a, hist[-3]
+    exp_b = {'player': 'b', 'kind': spell, 'cones': 8}
+    yield assert_equal, exp_b, hist[-2]
+    exp_c = {'player': 'c', 'kind': spell, 'cones': 8}
+    yield assert_equal, exp_c, hist[-1]
+
+def test_cast_sequoia():
+    spell = 'sequoia'
+    hist = [{'player': 'a', 'cones': 0, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell, target='b,c')
+    exp_a = {'player': 'a', 'kind': spell, 'magic': {spell: -1}}
+    yield assert_equal, exp_a, hist[-3]
+    exp_b = {'player': 'b', 'kind': spell, 'cones': 64}
+    yield assert_equal, exp_b, hist[-2]
+    exp_c = {'player': 'c', 'kind': spell, 'cones': 64}
+    yield assert_equal, exp_c, hist[-1]
+
+def test_cast_chaos():
+    spell = 'chaos'
+    hist = [{'player': 'a', 'cones': 1024, 'magic': {spell: 1}},]
+    trans = {'history': hist}
+    grimoire.cast(trans, 'a', spell)

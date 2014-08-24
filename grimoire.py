@@ -298,9 +298,47 @@ def redwood(trans, player, spell, target=None):
     coauthors = target.split(',')
     hist.append({'player': player, 'kind': spell, 'magic': {spell: -1}})
     for coauthor in coauthors:
-        hist.append({'player': player, 'kind': spell, 'cones': CONES_PER_SAPLING})
+        hist.append({'player': coauthor, 'kind': spell, 'cones': CONES_PER_SAPLING})
 
 SPELLBOOK['redwood'] = redwood
 
+def sequoia(trans, player, spell, target=None):
+    """gives a tree to every co-author of a journal article.
+    The article must be accepted. Target a is comma-separated list
+    of co-author player names.
+    """
+    hist = trans['history']
+    coauthors = target.split(',')
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1}})
+    for coauthor in coauthors:
+        hist.append({'player': coauthor, 'kind': spell, 'cones': CONES_PER_TREE})
 
+SPELLBOOK['sequoia'] = sequoia
+
+def chaos(trans, player, spell, target=None):
+    """???"""
+    hist = trans['history']
+    hist.append({'player': player, 'kind': spell, 'magic': {spell: -1}})
+    import gaia
+    gaia.drop(trans)
+    inv = inventories(trans)[player]
+    tran = {'player': player, 'kind': spell, 'cones': -inv['cones'], 
+            'magic': {key: -value for key, value in inv['magic'].items()}}
+    magic_cone_worth = np.random.randint(0, CONES_PER_TREE+1)
+    leyline = inv['cones'] + magic_cone_worth * sum(inv['magic'].values())
+    leyline *= 1.5 * np.random.rand() + 0.5
+    p = np.random.rand()
+    tran['cones'] += int(p * leyline)
+    spells = list(SPELLBOOK.keys())
+    nspells = len(spells)
+    for i in range(int(leyline * (1.0 - p) / magic_cone_worth)):
+        key = spells[np.random.randint(0, nspells)]
+        if key not in tran['magic']:
+            tran['magic'][key] = 0
+        tran['magic'][key] += 1
+    hist.append(tran)
+    for i in range(np.random.randint(0, 3)):
+        gaia.drop(trans)
+
+SPELLBOOK['chaos'] = chaos
 
