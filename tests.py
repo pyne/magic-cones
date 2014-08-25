@@ -1,9 +1,19 @@
 from __future__ import print_function
 
-from nose.tools import assert_equal
+from nose.tools import assert_equal, assert_in
 
 import grimoire
 import utils
+import gaia
+
+def test_decay():
+    spell = 'chaos'
+    hist = [{'player': 'a', 'cones': 1024},]
+    trans = {'history': hist}
+    gaia.decay(trans)
+    exp = [{'player': 'a', 'kind': 'decay', 'cones': -13}, 
+           {'player': 'a', 'kind': 'decay', 'cones': -14}]
+    yield assert_in, hist[-1], exp
 
 def test_cast_cone():
     hist = [{'player': 'a', 'cones': 0, 'magic': {'cone': 1}}]
@@ -253,3 +263,4 @@ def test_cast_chaos():
     hist = [{'player': 'a', 'cones': 1024, 'magic': {spell: 1}},]
     trans = {'history': hist}
     grimoire.cast(trans, 'a', spell)
+

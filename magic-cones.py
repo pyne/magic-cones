@@ -23,6 +23,8 @@ def main():
                         help='updates transactions from github')
     parser.add_argument('--drop', action='store_true', default=False, dest='drop',
                         help='Gaia drops magic cones')
+    parser.add_argument('--decay', action='store_true', default=False, dest='decay',
+                        help='Gaia decays existing cones')
     parser.add_argument('-r', action='store_true', default=False, dest='report',
                         help='prints report')
     parser.add_argument('--html', action='store_true', default=False, dest='html',
@@ -54,6 +56,8 @@ def main():
         github.update(trans, user=ns.gh_user, credfile=ns.gh_cred)
     if ns.drop:
         gaia.drop(trans)
+    if ns.decay:
+        gaia.decay(trans)
     if len(ns.cast) > 0:
         grimoire.cast(trans, ns.cast[0], ns.cast[1], target=ns.target)
     if ns.report:
