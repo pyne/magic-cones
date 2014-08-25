@@ -64,7 +64,13 @@ to the player's *ley line of credit*, or the total number of trees, saplings,
 and mundane cones. If the ley line of credit is less than 512, then the 
 likelihood is the ley line divided by 1024. If the ley line is greater than 512, 
 then the likelihood is the ley line divided by 2^(int(log2(leyline)) + 2).
-Every magic cone is equally probable to obtain."""
+Every magic cone is equally probable to obtain.
+
+But what the Great Earth Mother giveth she also taketh away. Mudane cones 
+are fragile and will decay over time back into the ground whence they came.
+Cones, saplings, and trees become mulch for the next generation with a 
+half-life of 1 year. The number of cones remaining to each player are tallied 
+weekly after the drop ceremony."""
 
 BASICS_HTML = """
 The purpose of Magic Cones is to improve software through reputation-based
@@ -83,12 +89,12 @@ Eight cones become a <i>sapling</i> and eight saplings become a <i>tree</i>.
 A player who opens a pull request, the <i>requester</i>, may add a <i>bounty</i> to the 
 pull request to encourage prompt review. This is done by adding the following
 to the original pull request message:
-<br/><br/>
+<br/>
 
 <p style="text-indent:50px;">
 **Bounty** - N
 </p>
-<br/><br/>
+<br/>
 
 Here N is replaced by the integer bounty value. Upon merge, the bounty value 
 is transferred from the requester to the <i>merger</i> in addition to the normal cone 
@@ -109,6 +115,13 @@ and mundane cones. If the ley line of credit is less than 512, then the
 likelihood is the ley line divided by 1024. If the ley line is greater than 512, 
 then the likelihood is the ley line divided by 2^(int(log2(leyline)) + 2).
 Every magic cone is equally probable to obtain.
+<br/><br/>
+
+But what the Great Earth Mother giveth she also taketh away. Mudane cones 
+are fragile and will decay over time back into the ground whence they came.
+Cones, saplings, and trees become mulch for the next generation with a 
+half-life of 1 year. The number of cones remaining to each player are tallied 
+weekly after the drop ceremony.
 <br/><br/>
 """
 
