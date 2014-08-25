@@ -34,7 +34,8 @@ def decay(trans):
         # without having to roll for each cone individually.
         q, r = divmod(cones*P, 1)
         n = int(q) + int(p <= r)
-        hist.append({'player': player, 'kind': 'decay', 'cones': n - cones})
+        if n != cones:
+            hist.append({'player': player, 'kind': 'decay', 'cones': n - cones})
         
         
     
