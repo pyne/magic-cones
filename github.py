@@ -41,12 +41,12 @@ def ensure_logged_in(gh, user=None, credfile='gh.cred'):
     ----------
     gh : GitHub object
         The object to authenticate with.
-    user : str, None, or NotSpecified, optional
+    user : str or None, optional
         The username to log into github with
     credfile : str, optional
         The github credentials file name.
     """
-    if user is None or user is NotSpecified:
+    if user is None:
         user = getuser()
         print("github username not specified, found {0!r}".format(user))
     if not os.path.isfile(credfile):
