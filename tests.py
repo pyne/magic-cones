@@ -7,13 +7,19 @@ import utils
 import gaia
 
 def test_decay():
-    spell = 'chaos'
     hist = [{'player': 'a', 'cones': 1024},]
     trans = {'history': hist}
     gaia.decay(trans)
     exp = [{'player': 'a', 'kind': 'decay', 'cones': -13}, 
            {'player': 'a', 'kind': 'decay', 'cones': -14}]
     yield assert_in, hist[-1], exp
+
+def test_give_cones():
+    hist = []
+    trans = {'history': hist}
+    utils.give_cones(trans, 'a', 1024, kind='meemo')
+    exp = {'player': 'a', 'cones': 1024, 'kind': 'meemo'}
+    yield assert_equal, hist[-1], exp
 
 def test_cast_cone():
     hist = [{'player': 'a', 'cones': 0, 'magic': {'cone': 1}}]

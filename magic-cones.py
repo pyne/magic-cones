@@ -7,6 +7,7 @@ import json
 import argparse
 
 import gaia
+import utils
 import raven
 import github
 import report
@@ -25,6 +26,11 @@ def main():
                         help='Gaia drops magic cones')
     parser.add_argument('--decay', action='store_true', default=False, dest='decay',
                         help='Gaia decays existing cones')
+    parser.add_argument('--give', nargs=2, default=(), dest='give',
+                        help='gives a player a cones manually')
+    parser.add_argument('--kind', default='welfare', dest='kind',
+                        help='determines the kind of transaction when manually giving'
+                             'a player cones.')
     parser.add_argument('-r', action='store_true', default=False, dest='report',
                         help='prints report')
     parser.add_argument('--html', action='store_true', default=False, dest='html',
@@ -54,6 +60,8 @@ def main():
 
     if ns.update:
         github.update(trans, user=ns.gh_user, credfile=ns.gh_cred)
+    if len(ns.give) > 0:
+        utils.give_cones(trans, ns.give[0], int(ns.give[1]), kind=ns.kind)
     if ns.drop:
         gaia.drop(trans)
     if ns.decay:

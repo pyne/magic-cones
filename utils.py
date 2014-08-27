@@ -28,6 +28,11 @@ def gross_cones(trans):
     n = sum([inv['cones'] for _, inv in invs.items()])
     return n
 
+def give_cones(trans, player, n, kind="welfare"):
+    """Gives n cones to a player"""
+    hist = trans['history']
+    hist.append({'player': player, 'cones': n, 'kind': kind})
+
 def newoverwrite(s, filename, verbose=False):
     """Useful for not forcing re-compiles and thus playing nicely with the
     build system.  This is acomplished by not writing the file if the existsing
