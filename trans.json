@@ -1,0 +1,2213 @@
+{
+ "owner": "pyne",
+ "repo": "pyne",
+ "history": [
+  {
+   "pr": 20,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 22,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 30,
+   "player": "paulromano",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 32,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 42,
+   "player": "chrisdembia",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 45,
+   "player": "katyhuff",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 62,
+   "player": "chrisdembia",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 70,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 70,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 74,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 100,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 100,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 102,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 103,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 109,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 109,
+   "player": "paulromano",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 109,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 111,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 111,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 114,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 114,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 115,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 115,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 116,
+   "player": "cbrachem",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 117,
+   "player": "cbrachem",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 121,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 123,
+   "player": "thewtex",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 125,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 130,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 130,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 133,
+   "player": "cbrachem",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 134,
+   "player": "paulromano",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 137,
+   "player": "paulromano",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 138,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 140,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 145,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 147,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 150,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 150,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 151,
+   "player": "klebenowm",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 152,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 153,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 154,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 154,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 154,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 155,
+   "player": "cbrachem",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 156,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 156,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 160,
+   "player": "cbrachem",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 162,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 163,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 164,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 164,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 165,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 166,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 167,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 168,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 169,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 170,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 171,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 172,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 172,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 173,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 173,
+   "player": "cbrachem",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 174,
+   "player": "cbrachem",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 175,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 179,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 179,
+   "player": "katyhuff",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 180,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 181,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 185,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 185,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 191,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 192,
+   "player": "gonuke",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 194,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 196,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 200,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 203,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 203,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 206,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 209,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 209,
+   "player": "kmanalo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 210,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 210,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 211,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 211,
+   "player": "py1sl",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 211,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 212,
+   "player": "paulromano",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 213,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 215,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 215,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 217,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 218,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 220,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 222,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 222,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 223,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 223,
+   "player": "kmanalo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 224,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 224,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 227,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 227,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 227,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 229,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 229,
+   "player": "kmanalo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 229,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 230,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 231,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 233,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 234,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 235,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 238,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 238,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 238,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 246,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 247,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 247,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 249,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 249,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 249,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 251,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 252,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 252,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 256,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 256,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "katyhuff",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 257,
+   "player": "gonuke",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 258,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 258,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 264,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 269,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 270,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 270,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 271,
+   "player": "hainest",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 272,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 272,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 273,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 273,
+   "player": "gonuke",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 273,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 276,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 279,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 281,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 281,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 282,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 282,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 283,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 283,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 284,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 284,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 284,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 285,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 285,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 286,
+   "player": "paulromano",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 287,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 288,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 288,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 291,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 291,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 293,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 293,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 294,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 298,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 299,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 300,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 300,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 302,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 302,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 304,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 308,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 308,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 310,
+   "player": "rachelslaybaugh",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 311,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 313,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 313,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 314,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 314,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 314,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 321,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 322,
+   "player": "elfring",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 323,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 324,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 324,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 325,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 325,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 327,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 329,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 329,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 330,
+   "player": "makeclean",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 330,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 338,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 338,
+   "player": "rwcarlsen",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 338,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 342,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 343,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 345,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 346,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 346,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 348,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 348,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 350,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 351,
+   "player": "erelson",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 356,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 357,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 358,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 359,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 359,
+   "player": "makeclean",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 359,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 359,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 361,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 370,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 371,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 372,
+   "player": "Pshriwise",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 374,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 374,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 376,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 376,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 378,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 380,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 381,
+   "player": "opotowsky",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 381,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 381,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 383,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 386,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 387,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 387,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 389,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 389,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 390,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 390,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 393,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 394,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 394,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 396,
+   "player": "jdangerx",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 397,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 397,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 401,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 402,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 403,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 404,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 407,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 408,
+   "player": "makeclean",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 408,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 409,
+   "player": "rwcarlsen",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 410,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 411,
+   "player": "paulromano",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 412,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 413,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 415,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 415,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 415,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 419,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 419,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 423,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 424,
+   "player": "stangmechanic",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 425,
+   "player": "rachelslaybaugh",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 426,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 427,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 428,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 429,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 429,
+   "player": "gonuke",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 429,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 431,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 433,
+   "player": "katyhuff",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 434,
+   "player": "howland",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 435,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 436,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 439,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 444,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 445,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 445,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 446,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 446,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 447,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 449,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 451,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 451,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 455,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 455,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 465,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 465,
+   "player": "julry",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 465,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 465,
+   "player": "gonuke",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 466,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 468,
+   "player": "kkiesling",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 468,
+   "player": "elliottbiondo",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 469,
+   "player": "opotowsky",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 469,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 469,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 471,
+   "player": "kkiesling",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 472,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 472,
+   "player": "rwcarlsen",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 472,
+   "player": "gidden",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 472,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 477,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 478,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 480,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 480,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 481,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 482,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 484,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 485,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 485,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 489,
+   "player": "gonuke",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 489,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 489,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 489,
+   "player": "erelson",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 489,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 491,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 492,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 495,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 497,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 498,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 498,
+   "player": "makeclean",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 501,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 502,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 502,
+   "player": "jrobcary",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 504,
+   "player": "makeclean",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 505,
+   "player": "jrobcary",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 506,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 508,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 508,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 509,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 510,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 513,
+   "player": "scopatz",
+   "kind": "requester",
+   "cones": 1
+  }
+ ],
+ "pull_requests": [
+  20,
+  22,
+  30,
+  32,
+  42,
+  45,
+  62,
+  70,
+  74,
+  82,
+  100,
+  102,
+  103,
+  109,
+  111,
+  114,
+  115,
+  116,
+  117,
+  121,
+  123,
+  125,
+  130,
+  133,
+  134,
+  137,
+  138,
+  140,
+  145,
+  146,
+  147,
+  150,
+  151,
+  152,
+  153,
+  154,
+  155,
+  156,
+  160,
+  162,
+  163,
+  164,
+  165,
+  166,
+  167,
+  168,
+  169,
+  170,
+  171,
+  172,
+  173,
+  174,
+  175,
+  179,
+  180,
+  181,
+  185,
+  191,
+  192,
+  194,
+  196,
+  200,
+  203,
+  206,
+  209,
+  210,
+  211,
+  212,
+  213,
+  215,
+  217,
+  218,
+  220,
+  222,
+  223,
+  224,
+  227,
+  229,
+  230,
+  231,
+  233,
+  234,
+  235,
+  238,
+  246,
+  247,
+  249,
+  251,
+  252,
+  253,
+  256,
+  257,
+  258,
+  264,
+  269,
+  270,
+  271,
+  272,
+  273,
+  276,
+  279,
+  281,
+  282,
+  283,
+  284,
+  285,
+  286,
+  287,
+  288,
+  291,
+  293,
+  294,
+  298,
+  299,
+  300,
+  301,
+  302,
+  304,
+  308,
+  310,
+  311,
+  313,
+  314,
+  321,
+  322,
+  323,
+  324,
+  325,
+  327,
+  329,
+  330,
+  338,
+  342,
+  343,
+  345,
+  346,
+  348,
+  350,
+  351,
+  356,
+  357,
+  358,
+  359,
+  361,
+  370,
+  371,
+  372,
+  374,
+  376,
+  378,
+  380,
+  381,
+  383,
+  386,
+  387,
+  389,
+  390,
+  393,
+  394,
+  396,
+  397,
+  400,
+  401,
+  402,
+  403,
+  404,
+  407,
+  408,
+  409,
+  410,
+  411,
+  412,
+  413,
+  415,
+  418,
+  419,
+  423,
+  424,
+  425,
+  426,
+  427,
+  428,
+  429,
+  430,
+  431,
+  432,
+  433,
+  434,
+  435,
+  436,
+  437,
+  439,
+  441,
+  444,
+  445,
+  446,
+  447,
+  449,
+  451,
+  455,
+  459,
+  462,
+  465,
+  466,
+  468,
+  469,
+  471,
+  472,
+  477,
+  478,
+  480,
+  481,
+  482,
+  484,
+  485,
+  488,
+  489,
+  491,
+  492,
+  495,
+  497,
+  498,
+  501,
+  502,
+  504,
+  505,
+  506,
+  508,
+  509,
+  510,
+  513
+ ]
+}
