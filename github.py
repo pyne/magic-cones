@@ -61,10 +61,10 @@ def update(trans, user=None, credfile='gh.cred'):
     hist = trans['history']
     previous_prs = set(trans.get('pull_requests', set()))
     gh = GitHub()
-    ensure_logged_in(gh, user=user, credfile=credfile)
+    ensure_logged_in(gh, user=user)
     r = gh.repository(trans['owner'], trans['repo'])
     #import pdb; pdb.set_trace()
-    for pr in r.iter_pulls(state='closed', direction='asc'):
+    for pr in r.iter_pulls(state='closed'):
         if pr.number in previous_prs:
             # prevents excessive queries
             continue
