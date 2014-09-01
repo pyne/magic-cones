@@ -52,7 +52,7 @@ def passwd(user):
 def send(trans):
     """Sends an email to the list."""
     me = 'pyne.raven@gmail.com'
-    you = 'scopatz@gmail.com'
+    you = 'pyne-dev@googlegroups.com'
     today = datetime.date.today()
 
     # Create message container - the correct MIME type is multipart/alternative.
