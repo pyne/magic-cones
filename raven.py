@@ -1,9 +1,11 @@
 """This modules sends summary emails.
 """
 from __future__ import print_function
+import os
 import time 
 import datetime
 import smtplib
+from getpass import getpass
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -37,10 +39,20 @@ HTML = """
 </html>
 """
 
+def passwd(user):
+    fname = '{0}.pw'.format(user.split('@', 1)[0])
+    if not os.path.isfile(fname):
+        pw = getpass('password for {0}:'.format(user))
+        with open(fname, 'w') as f:
+            f.write(pw)
+    with open(fname, 'r') as f:
+        pw = f.read()
+    return pw
+
 def send(trans):
     """Sends an email to the list."""
-    me = "raven@pyne.io"
-    you = "scopatz@gmail.com"
+    me = 'pyne.raven@gmail.com'
+    you = 'scopatz@gmail.com'
     today = datetime.date.today()
 
     # Create message container - the correct MIME type is multipart/alternative.
@@ -58,6 +70,11 @@ def send(trans):
     msg.attach(part2)
 
     # Send the message
-    s = smtplib.SMTP('localhost')
+    pw = passwd(me)
+    s = smtplib.SMTP('smtp.gmail.com', 587)
+    #s.ehlo()
+    s.starttls()
+    #s.ehlo()
+    s.login(me, pw)
     s.sendmail(me, you, msg.as_string())
     s.quit()
