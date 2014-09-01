@@ -1975,6 +1975,99 @@
    "player": "scopatz",
    "kind": "requester",
    "cones": 1
+  },
+  {
+   "pr": 519,
+   "player": "gidden",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 515,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 514,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 514,
+   "player": "crbates",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "pr": 512,
+   "player": "scopatz",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 512,
+   "player": "crbates",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 512,
+   "player": "makeclean",
+   "kind": "reviewer",
+   "cones": 1
+  },
+  {
+   "pr": 512,
+   "player": "elliottbiondo",
+   "kind": "requester",
+   "cones": 1
+  },
+  {
+   "player": "gidden",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "crbates",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "scopatz",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "elliottbiondo",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "cbrachem",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "crbates",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "jdangerx",
+   "kind": "decay",
+   "cones": -1
+  },
+  {
+   "player": "scopatz",
+   "kind": "decay",
+   "cones": -2
+  },
+  {
+   "player": "elliottbiondo",
+   "kind": "decay",
+   "cones": -1
   }
  ],
  "pull_requests": [
@@ -2208,6 +2301,10 @@
   508,
   509,
   510,
-  513
+  512,
+  513,
+  514,
+  515,
+  519
  ]
 }
