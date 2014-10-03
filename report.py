@@ -22,7 +22,7 @@ def report(trans, html=False):
         s = '\n'.join(tw.wrap(s))
         listings.append((player, 
                          cones // CONES_PER_TREE or '', 
-                         cones // CONES_PER_SAPLING or \
+                         (cones // CONES_PER_SAPLING) % (CONES_PER_TREE // CONES_PER_SAPLING) or \
                             ('' if cones // CONES_PER_TREE == 0 else 0), 
                          cones % CONES_PER_SAPLING,
                          s,

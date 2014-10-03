@@ -2451,6 +2451,15 @@
    "player": "elliottbiondo",
    "kind": "decay",
    "cones": -1
+  },
+  {
+   "pr": 487,
+   "player": "scopatz",
+   "kind": "cypress",
+   "magic": {
+    "cypress": -1
+   },
+   "cones": 83
   }
  ],
  "pull_requests": [
